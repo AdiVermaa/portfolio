@@ -2,423 +2,258 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Aditya Verma | Portfolio</title>
+    <meta name="description" content="Portfolio website of Aditya Verma - Frontend Developer & AI Enthusiast" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Aditya Verma</div>
-      <div>
+</head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <a href="/" class="logo" id="logo-refresh" onclick="window.location.href=window.location.origin">AV</a>        
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Aditya Verma</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="photo.jpeg" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Aditya Verma</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Resume-Aditya Verma1.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/aditya-verma-379869250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/AdiVermaa'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Tech CS & AI</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              <strong>Hello!</strong><br><strong> I’m Aditya Verma</strong>
-I'm a first-year Computer Science and AI student at Rishihood University with a passion for creating impactful and interactive projects. From developing web applications and games to designing a full-featured e-commerce site, I enjoy bringing ideas to life through code. I’m skilled in JavaScript, ReactJS, Node.js, and Firebase, which allow me to work seamlessly across frontend and backend development.
-
-Beyond coding, I’m dedicated to teamwork and thrive in organizing events, like Neutron Fest and various sports activities, where I apply my strong management and communication skills. I’m a disciplined learner, always ready to take on new challenges and push my skills further.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-                            <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-                            <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <!-- <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Schdn ui</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article> -->
-              <!-- <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article> -->
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Firebase</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <!-- <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article> -->
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <!-- <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Basic</p>
-                </div>
-              </article> -->
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/stone paper scissor game.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Rock Paper Scissor</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/AdiVermaa/project1'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://adivermaa.github.io/project1/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/ecommerce website selling hoodies, jeans, t-shirts.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Text to Speech</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href= 'https://github.com/AdiVermaa/text-to-speech'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://adivermaa.github.io/text-to-speech/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-                    <!-- <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/ecommerce website selling hoodies, jeans, t-shirts.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Konnect</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/AmanKumar1411/cannect-client'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div> -->
-          <!-- <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/movei deck website.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Movie Deck</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:adityavermaa2006@gmail.com">adityavermaa2006@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/aditya-verma-379869250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <!-- <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-          </ul>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun"></i>
+      </button>
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </div>
+  </nav>
+
+    <!-- Hero Section -->
+    <section id="profile">
+        <div class="profile-content">
+            <div class="profile-pic-container">
+                <img src="photo.jpeg" alt="Profile Picture" class="profile-pic">
+            </div>
+            <div class="text-glitch" data-text="Aditya Verma">Aditya Verma</div>
+            <div class="subtitle">Frontend Developer & AI Enthusiast</div>
+            <div class="typewriter">Building digital experiences one pixel at a time</div>
+            <div class="cta-container">
+                <button class="btn primary-btn" onclick="window.open('./assets/Resume-Aditya Verma1.pdf')">
+                    <i class="fas fa-download"></i> Resume
+                </button>
+                <button class="btn secondary-btn" onclick="location.href='#contact'">
+                    <i class="fas fa-paper-plane"></i> Contact
+                </button>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/AdiVermaa" class="social-icon" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aditya-verma-379869250" class="social-icon" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
         </div>
-      </nav> -->
-    </footer>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="./assets/about-pic.png" alt="About Me" class="about-pic">
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="highlight-text">Hey there! 👋</p>
+                        <p>I'm a first-year Computer Science and AI student at Rishihood University with a passion for creating impactful and interactive projects. From developing web applications and games to designing full-featured Movie Search App, I enjoy bringing ideas to life through code.</p>
+                        <p>Beyond coding, I'm dedicated to teamwork and thrive in organizing events, like Neutron Fest and various sports activities, where I apply my strong management and communication skills.</p>
+                    </div>
+                    <div class="skills-container">
+                        <div class="skill-group">
+                            <h3>Frontend</h3>
+                            <div class="skill-items">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <h3>Backend</h3>
+                            <div class="skill-items">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Firebase</span>
+                                <span class="skill-tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-grid">
+              <div class="project-card">
+                  <div class="project-image">
+                      <img src="./assets/stone paper scissor game.png" alt="Rock Paper Scissors">
+                      <div class="project-overlay">
+                          <div class="project-links">
+                              <a href="https://github.com/AdiVermaa/project1" target="_blank" class="project-link">
+                                  <i class="fab fa-github"></i>
+                              </a>
+                              <a href="https://adivermaa.github.io/project1/" target="_blank" class="project-link">
+                                  <i class="fas fa-external-link-alt"></i>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="project-content">
+                      <h3>Rock Paper Scissors</h3>
+                      <p>A modern take on the classic game with animated interactions and score tracking.</p>
+                      <div class="tech-stack">
+                          <span class="tech-tag">HTML</span>
+                          <span class="tech-tag">CSS</span>
+                          <span class="tech-tag">JavaScript</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-image">
+                    <img src="./assets/portfolio.png" alt="portfolio">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/AdiVermaa/portfolio" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://adivermaa.github.io/portfolio/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio</h3>
+                    <p>The website serves as a digital space to showcase my skills, achievements, and projects</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                  <img src="./assets/budget.png" alt="portfolio">
+                  <div class="project-overlay">
+                      <div class="project-links">
+                          <a href="https://github.com/AdiVermaa/Budget-Tracker" target="_blank" class="project-link">
+                              <i class="fab fa-github"></i>
+                          </a>
+                          <a href="https://adivermaa.github.io/Budget-Tracker/" target="_blank" class="project-link">
+                              <i class="fas fa-external-link-alt"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="project-content">
+                  <h3>Budget Tracker</h3>
+                  <p>A modern, user-friendly expense tracker web application that allows users to track their income and expenses efficiently.</p>
+                  <div class="tech-stack">
+                      <span class="tech-tag">HTML</span>
+                      <span class="tech-tag">CSS</span>
+                      <span class="tech-tag">JavaScript</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+                <img src="./assets/movie.png" alt="portfolio">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        <a href="https://github.com/AdiVermaa/Movie-Search" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://movie-search-lac-ten.vercel.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Movie Search</h3>
+                <p>The website serves as a digital space to showcase my skills, achievements, and projects</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">React</span>
+                </div>
+            </div>
+        </div>
+
+              <div class="project-card">
+                  <div class="project-image">
+                      <img src="./assets/text-to-speach.png" alt="Text to Speech">
+                      <div class="project-overlay">
+                          <div class="project-links">
+                              <a href="https://github.com/AdiVermaa/text-to-speech" target="_blank" class="project-link">
+                                  <i class="fab fa-github"></i>
+                              </a>
+                              <a href="https://adivermaa.github.io/text-to-speech/" target="_blank" class="project-link">
+                                  <i class="fas fa-external-link-alt"></i>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="project-content">
+                      <h3>Text to Speech</h3>
+                      <p>A web application that converts text input into natural-sounding speech.</p>
+                      <div class="tech-stack">
+                          <span class="tech-tag">HTML</span>
+                          <span class="tech-tag">CSS</span>
+                          <span class="tech-tag">JavaScript</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:adityavermaa2006@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>adityavermaa2006@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aditya-verma-379869250" class="contact-item" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
+
+    
