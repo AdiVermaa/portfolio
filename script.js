@@ -1,17 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Theme toggle functionality
   initThemeToggle();
-
-  // Smooth scroll
   initSmoothScroll();
-
-  // Mobile menu
   initMobileMenu();
-
-  // Scroll animations
   initScrollAnimations();
-
-  // Typewriter effect
   initTypewriter();
 });
 
@@ -19,9 +10,8 @@ function initThemeToggle() {
   const themeToggle = document.querySelector('.theme-toggle');
   const htmlElement = document.documentElement;
   
-  if (!themeToggle) return; // Guard clause if button not found
+  if (!themeToggle) return; 
 
-  // Check for saved theme preference or use system preference
   const savedTheme = localStorage.getItem('theme') || 'dark';
   applyTheme(savedTheme);
 
@@ -41,10 +31,8 @@ function initThemeToggle() {
     const icon = themeToggle.querySelector('i');
     if (!icon) return;
 
-    // Remove existing classes
     icon.classList.remove('fa-sun', 'fa-moon');
     
-    // Add appropriate icon
     if (theme === 'light') {
       icon.classList.add('fa-moon');
     } else {
@@ -64,7 +52,6 @@ function initSmoothScroll() {
                   behavior: 'smooth'
               });
               
-              // Close mobile menu if open
               const navLinks = document.querySelector('.nav-links');
               if (navLinks.classList.contains('active')) {
                   toggleMobileMenu();
